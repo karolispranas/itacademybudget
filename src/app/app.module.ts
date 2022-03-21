@@ -1,20 +1,31 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AlertModule } from 'ngx-bootstrap/alert';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BudgetsComponent } from './budgets/budgets.component';
+import { ExpensesComponent } from './expenses/expenses.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ExpensesComponent,
+    HomeComponent,
+    BudgetsComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    AlertModule.forRoot(),
+    BsDatepickerModule,
+    ProgressbarModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
