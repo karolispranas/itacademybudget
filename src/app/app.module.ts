@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import { BudgetsComponent } from './budgets/budgets.component';
 import { ExpensesComponent } from './expenses/expenses.component';
 import { HomeComponent } from './home/home.component';
+import { ExpenseDetailsComponent } from './expense-details/expense-details.component';
+import {ExpensesService} from "./services/expenses.service";
 
 @NgModule({
   declarations: [
@@ -16,6 +18,7 @@ import { HomeComponent } from './home/home.component';
     ExpensesComponent,
     HomeComponent,
     BudgetsComponent,
+    ExpenseDetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,7 @@ import { HomeComponent } from './home/home.component';
     BsDatepickerModule,
     ProgressbarModule,
   ],
-  providers: [],
+  providers: [ExpensesService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

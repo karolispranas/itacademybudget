@@ -27,27 +27,27 @@
 <table class="table mt-3">
   <tbody>
     <tr>
-      <td>Groceries</td>
+      <td><a [routerLink]="['/expense', 0 ]" >{{this.expenseList[0].name}}</a></td>
       <td>2022-03-19</td>
       <td>&euro;20.05</td>
     </tr>
     <tr>
-      <td>Car repair</td>
+      <td><a  [routerLink]="['/expense', 1 ]">{{this.expenseList[1].name}}</a></td>
       <td>2022-03-15</td>
       <td>&euro;352.05</td>
     </tr>
     <tr>
-      <td>Cinema tickets</td>
+      <td><a [routerLink]="['/expense', 2 ]">{{this.expenseList[2].name}}</a></td>
       <td>2022-03-14</td>
       <td>&euro;12.26</td>
     </tr>
     <tr>
-      <td>Pizza order</td>
+      <td><a [routerLink]="['/expense', 3 ]">{{this.expenseList[3].name}}</a></td>
       <td>2022-03-10</td>
       <td>&euro;12.81</td>
     </tr>
     <tr>
-      <td>Gas</td>
+      <td><a [routerLink]="['/expense', 4 ]">{{this.expenseList[4].name}}</a></td>
       <td>2022-03-02</td>
       <td>&euro;67.22</td>
     </tr>
